@@ -2,7 +2,8 @@ package mypackage
 
 import (
 	"fmt"
-	"strings"
+
+	"github.com/bosshie96/sayhi/utils" // Importing the utils package
 )
 
 // SayHi prints a simple greeting message.
@@ -12,5 +13,5 @@ func SayHi(name string) {
 
 // FormatName converts a given string to uppercase letters.
 func FormatName(name string) string {
-	return strings.ToUpper(name) + "!\n"
+	return utils.FormatName(name)
 }
